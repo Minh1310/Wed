@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+     
+    <servlet>
+        <servlet-name>MyAlias</servlet-name>
+        <servlet-class>controller.MyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyAlias</servlet-name>
+        <url-pattern>/MyServletURL</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>controller.LoginFilter</filter-class>
+<!--        <exclude>
+         Exclude file3.txt 
+        <test stmatch="account_register.html" />
+         Exclude files with .exe extension 
+        <test stmatch="take_pass.html" />
+        </exclude>-->
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/home.jsp</url-pattern>
+    </filter-mapping>   
+</web-app>

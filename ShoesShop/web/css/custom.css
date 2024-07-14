@@ -1,0 +1,30 @@
+/*============================================================================================*/
+/* Your custom styles below */
+
+.modal-dialog {
+    margin-top: 200px;
+}
+.modal-header .close {
+    margin: -1rem -1rem -1rem auto;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
